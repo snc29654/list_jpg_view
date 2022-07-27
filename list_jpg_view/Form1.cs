@@ -25,7 +25,7 @@ namespace list_jpg_view
         private void button1_Click(object sender, EventArgs e)
         {
             string[] files = System.IO.Directory.GetFiles(
-            @"C:\temp", "*", System.IO.SearchOption.AllDirectories);
+            @"C:\temp", "*.jpg", System.IO.SearchOption.AllDirectories);
 
             listBox1.Items.AddRange(files);
         }
